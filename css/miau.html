@@ -1,0 +1,48 @@
+html,body,header{
+    height: 100%;
+
+}
+
+
+
+
+header{
+    grid-row: 1;
+    grid-column: 1 /span 2;
+    background-color: blueviolet;
+    height: fit-content;
+    margin:none;
+}
+
+body{
+    display:grid;
+    grid-template-rows:70px auto 30px;
+    grid-template-columns: 150px auto;
+}
+
+main{
+    margin: 5px;
+    grid-row: 2;
+    grid-column: 1/span2;
+    margin-bottom: auto;
+}
+
+
+
+footer{
+    grid-row: 3;
+    grid-column: 1/span2;
+    background-color: aqua;
+}
+
+article{
+    grid-row:2;
+    grid-column:2;
+    background-color:aqua;
+}
+
+section article h2{
+    text-align: center;
+    color:white;
+}
+

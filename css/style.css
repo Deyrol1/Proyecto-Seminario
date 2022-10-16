@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  text-decoration: none;
+}
+
+li {
+  text-align: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 830px;
+  background: url("../imagenes/header.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: absolute;
+}
+header nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  border-bottom: 1px solid black;
+  background: rgba(36, 21, 130, 0.2);
+  position: fixed;
+  z-index: 100;
+}
+header nav ul {
+  display: inline-flex;
+  align-items: center;
+}
+header nav ul .izquierda {
+  margin-right: 20px;
+}
+header nav ul .izquierda a {
+  color: red;
+}
+header section article {
+  display: grid;
+  grid-template-columns: 200px 200px auto;
+  grid-template-rows: 300px 200px auto;
+}
+header section article h2 {
+  grid-column: 3;
+  grid-row: 1;
+  width: 500px;
+  color: blue;
+  margin: 195px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 60px;
+}
+header section article .conocetext {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  top: 20em;
+  left: 48em;
+}
+header section article .conocetext p {
+  font-size: 30px;
+  color: black;
+}
+
+main .Acercaa article {
+  width: 100%;
+  height: 100%;
+}
+main .Acercaa article h2 {
+  text-align: center;
+}
+main .Acercaa article ul {
+  display: grid;
+  grid-template-rows: 320px 380px 270px 420px;
+}
+main .Acercaa article ul .izquierda1 {
+  background-color: #8C52FF;
+  align-items: flex-start;
+  text-align: right;
+}
+main .Acercaa article ul .izquierda1 img {
+  float: left;
+  height: 400px;
+  width: 400px;
+}
+main .Acercaa article ul .izquierda1 .textacerca {
+  font-size: 45px;
+  padding: 100px;
+}
+main .Acercaa article ul .izquierda2 {
+  background-color: #FCECC9;
+  align-items: flex-start;
+  text-align: right;
+}
+main .Acercaa article ul .izquierda2 img {
+  float: left;
+  height: 400px;
+  width: 400px;
+}
+main .Acercaa article ul .izquierda2 .textacerca {
+  font-size: 45px;
+  padding: 100px;
+}
+main .Acercaa article ul .derecha1 {
+  width: 100%;
+  background-color: #A1CDF4;
+  align-items: flex-end;
+  text-align: right;
+}
+main .Acercaa article ul .derecha1 img {
+  float: right;
+  height: 400px;
+  width: 400px;
+}
+main .Acercaa article ul .derecha1 .textacerca {
+  font-size: 45px;
+  padding: 100px;
+}
+main .Acercaa article ul .derecha2 {
+  width: 100%;
+  background-color: #06BA63;
+  align-items: flex-end;
+  text-align: right;
+}
+main .Acercaa article ul img {
+  float: right;
+  height: 400px;
+  width: 400px;
+}
+main .Acercaa article ul .textacerca {
+  font-size: 45px;
+  padding: 100px;
+}
+main .pensadoo {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+main .pensadoo article {
+  background: white;
+  display: inline-flex;
+}
+
+.card1 {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+  background: url("../imagenes/desplazar/1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.card1 .container h4 b {
+  position: relative;
+  top: 1em;
+  font-size: 20px;
+}
+.card1 .container p {
+  width: 250px;
+  position: relative;
+  top: 14em;
+  left: 1em;
+}
+
+.card2 {
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+  background: url("../imagenes/desplazar/2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.card2 h4 b {
+  position: relative;
+  top: 1em;
+  font-size: 20px;
+}
+.card2 p {
+  width: 250px;
+  position: relative;
+  top: 14em;
+  left: 1em;
+}
+
+.equipoo {
+  text-align: center;
+}
+.equipoo article .persona1 {
+  height: 500px;
+  background-color: #8C52FF;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.equipoo article .persona1 h3 {
+  color: white;
+}
+.equipoo article .persona1 .personaizquierda {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.equipoo article .persona1 .personaizquierda h3 {
+  grid-column: 1;
+}
+.equipoo article .persona1 .personaizquierda #fotopersona {
+  grid-column: 1;
+  float: left;
+  height: 500px;
+  width: 500px;
+  margin-left: 20px;
+}
+.equipoo article .persona1 .personaizquierda #infopersona {
+  grid-column: 3;
+  float: right;
+  height: 500px;
+  width: 600px;
+  margin-right: 20px;
+}
+.equipoo article .persona1 .personaizquierda .descripersona {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+}
+.equipoo article .persona1 .personaizquierda .descripersona p {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  top: 7em;
+  left: 32em;
+  font-size: 30px;
+  color: red;
+}
+
+.contactoo {
+  text-align: center;
+}
+.contactoo article .infoc {
+  height: 500px;
+  background: url("../imagenes/contacto.svg");
+  background-size: cover;
+}
+.contactoo article .infoc strong {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 20em;
+}
+
+@media screen and (min-width: 500px) {
+  #logomini {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  #logo {
+    display: none;
+  }
+  header {
+    height: 500px;
+    width: 100%;
+    background: url("../imagenes/headermini.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  header nav ul .izquierda {
+    margin-right: 10px;
+  }
+  header section article {
+    display: grid;
+    grid-template-columns: 50px 50px auto;
+    grid-template-rows: 50px 100px auto;
+  }
+  header section article h2 {
+    color: blue;
+    font-size: 30px;
+    position: absolute;
+    top: -3.5em;
+    right: -10em;
+  }
+  header section article .conocetext {
+    width: 160px;
+    height: 200px;
+    position: relative;
+    top: 10em;
+    left: 9em;
+  }
+  header section article .conocetext p {
+    font-size: 18px;
+    color: black;
+  }
+  main .Acercaa article {
+    width: 100%;
+    height: 100%;
+  }
+  main .Acercaa article h2 {
+    text-align: center;
+  }
+  main .Acercaa article ul {
+    display: grid;
+    grid-template-rows: 140px 160px 140px;
+  }
+  main .Acercaa article ul .izquierda1 img {
+    height: 160px;
+    width: 160px;
+  }
+  main .Acercaa article ul .izquierda1 .textacerca {
+    font-size: 22px;
+    padding: 30px;
+  }
+  main .Acercaa article ul .izquierda2 img {
+    height: 160px;
+    width: 160px;
+  }
+  main .Acercaa article ul .izquierda2 .textacerca {
+    font-size: 22px;
+    padding: 30px;
+  }
+  main .Acercaa article ul .derecha1 img {
+    height: 160px;
+    width: 160px;
+  }
+  main .Acercaa article ul .derecha1 .textacerca {
+    font-size: 22px;
+    padding: 30px;
+  }
+  main .Acercaa article ul .derecha2 img {
+    height: 160px;
+    width: 160px;
+  }
+  main .Acercaa article ul .derecha2 .textacerca {
+    font-size: 22px;
+    padding: 30px;
+  }
+  main .pensadoo {
+    padding: 10px;
+  }
+  main .pensadoo article {
+    display: inline-block;
+  }
+  .card1 {
+    margin: 20px;
+  }
+  .card2 {
+    margin: 20px;
+  }
+  .equipoo {
+    text-align: center;
+  }
+  .equipoo article .persona1 {
+    height: 200px;
+    background-color: #8C52FF;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .equipoo article .persona1 .personaizquierda {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .equipoo article .persona1 .personaizquierda h3 {
+    grid-column: 1;
+  }
+  .equipoo article .persona1 .personaizquierda #fotopersona {
+    grid-column: 1;
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin-left: 20px;
+  }
+  .equipoo article .persona1 .personaizquierda #infopersona {
+    grid-column: 3;
+    float: right;
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  .equipoo article .persona1 .personaizquierda .descripersona {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+  }
+  .equipoo article .persona1 .personaizquierda .descripersona p {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 4.5em;
+    left: 12em;
+    font-size: 15px;
+    color: black;
+  }
+  .contactoo {
+    text-align: center;
+  }
+  .contactoo article .infoc {
+    height: 200px;
+    background: url("../imagenes/contacto.svg");
+    background-size: cover;
+  }
+  .contactoo article .infoc strong {
+    color: white;
+    font-size: 16px;
+    position: relative;
+    top: 9em;
+  }
+  footer {
+    width: 100%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

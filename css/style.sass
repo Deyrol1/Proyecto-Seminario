@@ -1,0 +1,491 @@
+@import 'reset'
+
+
+$imgalto: 400px
+$imgancho: 400px
+
+$texttamano: 45px
+$textpadding: 100px
+
+
+$personaalto: 500px
+$personaancho: 500px
+
+$infoalto: 500px
+$infoancho: 600px
+
+html
+    scroll-behavior: smooth    
+header
+    height: 830px
+    background: url('../imagenes/header.svg')
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: absolute
+    
+    
+    nav
+        width: 100%
+        display: grid
+        grid-template-columns: 60px 1fr 
+        
+        border-bottom: 1px solid black
+        background: #24158233
+        position: fixed
+        z-index: 100
+    
+    
+                
+        ul
+            display: inline-flex
+            align-items: center
+            .izquierda
+                margin-right: 20px
+                a
+                    color: red
+
+    section
+    
+
+        article
+            display: grid
+            grid-template-columns: 200px 200px auto
+            grid-template-rows: 300px 200px auto
+
+            h2
+                grid-column: 3
+                grid-row: 1
+                width: 500px
+                color: blue
+                margin:195px
+                display: inline-flex
+                align-items: center
+                font-size: 60px
+
+            .conocetext
+                width: 400px
+                height: 300px
+                position: relative
+                top: 20em
+                left: 48em
+                p
+                    font-size: 30px
+                    color: black
+                    
+                
+
+
+        
+
+main
+    .Acercaa
+    
+        article
+            width: 100%
+            height: 100%
+
+            h2
+                text-align: center
+
+            ul
+                display: grid
+                grid-template-rows: 320px 380px 270px 420px
+        
+                .izquierda1
+                    background-color: #8C52FF
+             
+                
+                    align-items: flex-start
+                    text-align: right
+                
+                    img
+                        float: left
+                        height: $imgalto
+                        width: $imgancho
+                    .textacerca
+                        font-size: $texttamano
+                        padding: $textpadding
+
+                .izquierda2
+                    background-color: #FCECC9
+                 
+                    
+                    align-items: flex-start
+                    text-align: right
+                
+                    img
+                        float: left
+                        height: $imgalto
+                        width: $imgancho
+                    .textacerca
+                        font-size: $texttamano
+                        padding: $textpadding
+            
+
+    
+                .derecha1
+                    width: 100%
+                    background-color: #A1CDF4
+                    align-items: flex-end
+                    text-align: right
+
+                    img
+                        float: right
+                        height: $imgalto
+                        width: $imgancho
+                    .textacerca
+                        font-size: $texttamano
+                        padding: $textpadding
+                .derecha2
+                    width: 100%
+                    background-color: #06BA63
+                    align-items: flex-end
+                    text-align: right
+
+                img
+                    float: right
+                    height: $imgalto
+                    width: $imgancho
+                .textacerca
+                    font-size: $texttamano
+                    padding: $textpadding
+                
+
+
+    .pensadoo
+        text-align: center
+        padding: 20px
+        margin: 20px
+        article
+            background: white
+            display: inline-flex
+
+.card1
+    height: 400px
+    width: 300px
+    margin-right: 20px
+    background: url('../imagenes/desplazar/1.svg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    .container
+
+        h4
+            
+            b
+                position: relative
+                top: 1em
+                font-size: 20px
+                
+        p
+            width: 250px
+            position: relative
+            top: 14em
+            left: 1em
+
+
+.card2
+    height: 400px
+    width: 300px
+    margin-right: 20px
+    background: url('../imagenes/desplazar/2.svg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    h4
+        b
+            position: relative
+            top: 1em
+            font-size: 20px
+    p
+        width: 250px
+        position: relative
+        top: 14em
+        left: 1em
+
+        
+.equipoo
+
+    text-align: center
+
+    article
+        .persona1
+            height: 500px
+            background-color: #8C52FF
+            background-size: cover
+            background-repeat: no-repeat
+            h3
+                color: white
+            .personaizquierda
+                display: grid
+                grid-template-columns:  1fr 1fr 1fr
+                h3
+                    grid-column: 1 
+            
+                #fotopersona
+                    grid-column: 1
+                    float: left
+                    height: $personaalto
+                    width: $personaancho
+                    margin-left: 20px
+                #infopersona
+                    grid-column: 3
+                    float: right
+                    height: $infoalto
+                    width: $infoancho
+                    margin-right: 20px
+                .descripersona
+                    position: absolute
+                    height: 200px
+                    width: 200px
+                    p
+                        position: absolute
+                        height: 300px
+                        width: 300px
+                        top: 7em
+                        left: 32em
+                        font-size: 30px
+                        color: red
+
+                
+.contactoo
+    text-align: center
+
+    article
+        .infoc
+            height: 500px
+            background: url('../imagenes/contacto.svg')
+            background-size: cover
+            strong
+                color: white
+                font-size: 20px
+                position: relative
+                top: 20em
+            
+            
+
+
+
+
+        
+
+
+
+
+        
+
+                    
+                        
+
+                        
+                
+
+@media screen and (min-width: 500px )
+    #logomini
+        display: none
+        
+
+
+@media screen and (max-width: 500px )
+    
+    $imgalto: 160px
+    $imgancho: 160px
+
+    $texttamano: 22px
+    $textpadding: 30px
+
+
+    $personaalto: 200px
+    $personaancho: 200px
+
+    $infoalto: 200px
+    $infoancho: 200px
+
+
+
+    #logo
+        display: none
+
+
+    header
+        height: 500px
+        width: 100%
+        background: url('../imagenes/headermini.svg')
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        
+        
+        
+        nav
+            ul
+                .izquierda
+                    margin-right: 10px
+        section
+    
+
+            article
+                display: grid
+                grid-template-columns: 50px 50px auto
+                grid-template-rows: 50px 100px auto
+                h2
+        
+                
+                    color: blue
+                    font-size: 30px
+                    position: absolute
+                    top: -3.5em
+                    right: -10em
+
+                .conocetext
+                    width: 160px
+                    height: 200px
+                    position: relative
+                    top: 10em
+                    left: 9em
+                    p
+                        font-size: 18px
+                        color: black
+    main
+        .Acercaa
+            
+        
+            article
+                width: 100%
+                height: 100%
+
+                h2
+                    text-align: center
+
+                ul
+                    display: grid
+                    grid-template-rows: 140px 160px 140px 
+            
+                    .izquierda1
+                  
+                    
+                        img
+                            height: $imgalto
+                            width: $imgancho
+                        .textacerca
+                            font-size: $texttamano
+                            padding: $textpadding
+
+                    .izquierda2
+                   
+                        img
+                            height: $imgalto
+                            width: $imgancho
+                        .textacerca
+                            font-size: $texttamano
+                            padding: $textpadding
+                
+
+        
+                    .derecha1
+                        img
+                           
+                            height: $imgalto
+                            width: $imgancho
+                        .textacerca
+                            font-size: $texttamano
+                            padding: $textpadding
+                    .derecha2
+                        img
+                            height: $imgalto
+                            width: $imgancho
+                        .textacerca
+                            font-size: $texttamano
+                            padding: $textpadding
+        
+
+        .pensadoo
+        
+            padding: 10px
+       
+            article
+             
+                display: inline-block
+              
+
+    .card1
+  
+        margin: 20px
+    
+
+    .card2
+        margin: 20px
+
+    .equipoo
+
+        text-align: center
+
+        article
+            .persona1
+                height: 200px
+                background-color: #8C52FF
+                background-size: cover
+                background-repeat: no-repeat
+                .personaizquierda
+                    display: grid
+                    grid-template-columns:  1fr 1fr 1fr
+                    h3
+                        grid-column: 1 
+                
+                    #fotopersona
+                        grid-column: 1
+                        float: left
+                        height: $personaalto
+                        width: $personaancho
+                        margin-left: 20px
+                    #infopersona
+                        grid-column: 3
+                        float: right
+                        height: $infoalto
+                        width: $infoancho
+                        margin-right: 20px
+                    .descripersona
+                        position: absolute
+                        height: 200px
+                        width: 200px
+                        p
+                            position: absolute
+                            height: 300px
+                            width: 300px
+                            top: 4.5em
+                            left: 12em
+                            font-size: 15px
+                            color: black
+    .contactoo
+        text-align: center
+        article
+            .infoc
+                height: 200px
+                background: url('../imagenes/contacto.svg')
+                background-size: cover
+                
+                strong
+                    color: white
+                    font-size: 16px
+                    position: relative
+                    top: 9em
+
+    footer
+        width: 100%
+        height: 100%
+            
+
+                  
+                
+
+            
+
+
+
+
+            
+
+                        
+                        
+
+
